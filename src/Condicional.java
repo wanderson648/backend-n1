@@ -8,7 +8,7 @@ public class Condicional {
 // código omitido
 
         if (incluidoNoPlano == true && tipoPlano.equals("plus")){
-            System.out.println("Filme liberado");
+            System.out.println("modelos.Filme liberado");
         } else {
             System.out.println("Deve pagar a locação");
         }
