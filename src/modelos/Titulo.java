@@ -1,6 +1,6 @@
 package modelos;
 
-public class Titulo {
+public class Titulo implements Comparable<Titulo>{
 
     String nome;
     int anoDeLancamento;
@@ -83,5 +83,10 @@ public class Titulo {
 
     public void setDuracaoEmMinutos(int duracaoEmMinutos) {
         this.duracaoEmMinutos = duracaoEmMinutos;
+    }
+
+    @Override
+    public int compareTo(Titulo anothersTitulo) {
+        return this.getNome().compareTo(anothersTitulo.getNome());
     }
 }
