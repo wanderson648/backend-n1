@@ -1,15 +1,22 @@
 public class Produto {
 
-    String nome;
-    double preco;
-    double descontoParaPix;
+    private String nome;
+    private double preco;
 
-    double pegaPrecoFinal(boolean pagamentoViaPix) {
-        if (pagamentoViaPix) {
-            return preco - descontoParaPix;
-        } else {
-            return preco;
-        }
+    public Produto(String nome, double preco) {
+        this.nome = nome;
+        this.preco = preco;
     }
 
+    public String getNome() {
+        return nome;
+    }
+
+    public double getPreco() {
+        return preco;
+    }
+
+    public void setPreco(double preco) {
+        this.preco = preco;
+    }
 }
