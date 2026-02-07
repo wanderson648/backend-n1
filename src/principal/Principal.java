@@ -1,3 +1,5 @@
+package principal;
+
 import calculos.CalculadoraDeTempo;
 import calculos.FiltroRecomendacao;
 import modelos.Episodio;
@@ -5,9 +7,8 @@ import modelos.Filme;
 import modelos.Serie;
 
 import java.util.ArrayList;
-import java.util.List;
 
-public class Main {
+public class Principal {
     public static void main(String[] args) {
         Filme meuFilme = new Filme("O poderoso chefão", 1970);
         meuFilme.setDuracaoEmMinutos(180);
